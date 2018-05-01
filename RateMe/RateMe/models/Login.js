@@ -15,7 +15,7 @@ var sequelize = new Sequelize('OracleCloudDBTest', 'root', 'BhavikThakkar@55', {
   dialect: 'mysql',
   host: "localhost",
   port: 3306,
-
+  insecureAuth : true,
   define:
   {
     timestamps: false // true by default
