@@ -23,7 +23,7 @@ var Sequelize = require('sequelize');
   }
 });*/
 
-var sequelize = new Sequelize('OracleCloudDBTest', 'root', '', {
+var sequelize = new Sequelize('OracleCloudDBTest', 'root', 'BhavikThakkar@55', {
   dialect: 'mysql',
   host: "localhost",
   port: 3306,
