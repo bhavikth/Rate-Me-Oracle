@@ -19,7 +19,8 @@ var sequelize = new Sequelize('OracleCloudDBTest', 'root', '', {
     dialect: 'mysql',
     host: "localhost",
     port: 3306,
-    minConnections: 1,
+    // minConnections: 1,
+    pool: { maxConnections: 5, maxIdleTime: 30},
     
     define:
     {
