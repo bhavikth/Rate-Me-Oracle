@@ -15,11 +15,12 @@ var Sequelize = require('sequelize');
  }
 });*/
 
-var sequelize = new Sequelize('OracleCloudDBTest', 'root', 'BhavikThakkar@55', {
+var sequelize = new Sequelize('OracleCloudDBTest', 'root', '', {
     dialect: 'mysql',
     host: "localhost",
     port: 3306,
-    insecureAuth : true,
+    minConnections: 1,
+    
     define:
     {
       timestamps: true // true by default
